@@ -1,0 +1,30 @@
+{
+  "name": "price-tracker",
+  "version": "0.1.0",
+  "description": "A simple price tracker for all your favorite products.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IronKyle38/price-tracker.git"
+  },
+  "keywords": [
+    "price",
+    "tracker",
+    "product",
+    "amazon",
+    "ebay",
+    "walmart"
+  ],
+  "author": "IronKyle38",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IronKyle38/price-tracker/issues"
+  },
+  "homepage": "https://github.com/IronKyle38/price-tracker#readme",
+  "dependencies": {
+    "puppeteer": "^19.8.2"
+  }
+}
