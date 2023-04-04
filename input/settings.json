@@ -1,0 +1,13 @@
+{
+    "currencySymbol": "€",
+    "decimalSeparator": ",",
+    "products": [
+        {
+            "siteName": "Example",
+            "productName": "Product",
+            "productQuantity": 0,
+            "productURL": "https://www.example.com/product",
+            "cssSelector": "example-price-selector"
+        }
+    ]
+}

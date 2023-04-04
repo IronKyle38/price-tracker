@@ -1,29 +1,24 @@
-// Install puppeteer: npm install puppeteer
+// Install required modules: npm install
 // Run: node index.js
 
-// Import puppeteer
-const puppeteer = require('puppeteer');
+// Import modules
+const fs = require('fs');
+const { getPrice } = require('./functions/getPrice');
 
-// Define the async function that will get the price of the product
-async function getPrice() {
-    const browser = await puppeteer.launch();
-    const page = await browser.newPage();
-    await page.goto('https://www.example.com/product'); // Go to the product page
+// Open settings file
+const settings = require('./input/settings.json');
 
-    // Wait for the price element to load
-    await page.waitForSelector('example-price-selector');
+// Create today's date
+const today = new Date();
+const date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
 
-    // Get the price text content
-    const priceText = await page.$eval('example-price-selector', el => el.textContent);
-
-    // Extract the price value from the text
-    const price = parseFloat(priceText.replace('€', '').replace(',', '.'));
-
-    await browser.close();
-    return price;
+// Loop through the products
+for (let n = 0; n < settings.products.length; n++) {
+  // Get the price
+  getPrice(settings, n).then(price => {
+    // Save the price to an output file .csv
+    fs.appendFile(`./output/${settings.products[n].productName}.csv`, `${date},${settings.products[n].siteName},${settings.products[n].productQuantity},${price}\n`, err => {
+      if (err) throw err;
+    });
+  });
 }
-
-// Call the function and log the price
-getPrice().then(price => {
-    console.log(`The price is ${price}`);
-});
