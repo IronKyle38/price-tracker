@@ -1,4 +1,4 @@
-// Install puppeteer: npm install puppeteer
+// Install required modules: npm install
 // Run: node index.js
 
 // Import modules
