@@ -4,7 +4,6 @@
 // Import modules
 const fs = require('fs');
 const { getPrice } = require('./functions/getPrice');
-const puppeteer = require('puppeteer');
 
 // Open settings file
 const settings = require('./input/settings.json');
