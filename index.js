@@ -2,6 +2,7 @@
 // Run: node index.js
 
 // Import puppeteer
+const { getPrice } = require('./functions/getPrice');
 const puppeteer = require('puppeteer');
 
 // Define the async function that will get the price of the product
