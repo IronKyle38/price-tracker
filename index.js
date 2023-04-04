@@ -5,11 +5,8 @@
 const { getPrice } = require('./functions/getPrice');
 const puppeteer = require('puppeteer');
 
-// Define the async function that will get the price of the product
-async function getPrice() {
-    const browser = await puppeteer.launch();
-    const page = await browser.newPage();
-    await page.goto('https://www.example.com/product'); // Go to the product page
+// Open settings file
+const settings = require('./input/settings.json');
 
     // Wait for the price element to load
     await page.waitForSelector('example-price-selector');
