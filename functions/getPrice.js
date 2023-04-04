@@ -3,19 +3,19 @@
 // Import puppeteer
 const puppeteer = require('puppeteer');
 
-async function getPrice() {
+async function getPrice(settings, n) {
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
-    await page.goto('https://www.example.com/product'); // Go to the product page
+    await page.goto(settings.products[n].productURL);
 
     // Wait for the price element to load
-    await page.waitForSelector('example-price-selector');
+    await page.waitForSelector(settings.products[n].cssSelector);
 
     // Get the price text content
-    const priceText = await page.$eval('example-price-selector', el => el.textContent);
+    const priceText = await page.$eval(settings.products[n].cssSelector, el => el.textContent);
 
     // Extract the price value from the text
-    const price = parseFloat(priceText.replace('€', '').replace(',', '.'));
+    const price = parseFloat(priceText.replace(settings.currencySymbol, '').replace(settings.decimalSeparator, '.'));
 
     await browser.close();
     return price;
