@@ -25,6 +25,6 @@
   },
   "homepage": "https://github.com/IronKyle38/price-tracker#readme",
   "dependencies": {
-    "puppeteer": "19.9.1"
+    "puppeteer": "19.10.0"
   }
 }
