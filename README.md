@@ -58,7 +58,7 @@ This is a simple price tracker that you can personalize to track the price of an
 
 ## Usage
 
-1. Edit the `config.json` file to add your favorite online store and the product you want to track.
+1. Edit the `config.json` file in the `input` folder to add your favorite online store and the product you want to track.
 
 2. Run the script
 
