@@ -2,7 +2,7 @@
 
 <div align="center">
     <p>
-        <img src="/img/banner.jpg" alt="Price Tracker" />
+        <img src="/img/banner_1200x300px.jpg" alt="Price Tracker Banner" />
     </p>
     <p>
         <a href="https://github.com/IronKyle38/price-tracker/commits/main"><img
