@@ -1,9 +1,9 @@
 <div align="center">
     <p>
-        <img src="/banner_1200x300px.jpg" alt="Price Tracker Banner" />
+        <img src="/img/banner_1200x300px.jpg" alt="Price Tracker Banner" />
     </p>
     <p>
-        <img src="/banner_1280x640px.jpg" alt="Price Tracker Banner" />
+        <img src="/img/banner_1280x640px.jpg" alt="Price Tracker Banner" />
     </p>
     <p>
         Image par <a
