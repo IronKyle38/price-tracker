@@ -53,7 +53,7 @@ This is a simple price tracker that you can personalize to track the price of an
 
 4. Install the dependencies
 
-    ![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/IronKyle38/price-tracker/puppeteer)
+    [![puppeteer version](https://img.shields.io/github/package-json/dependency-version/IronKyle38/price-tracker/puppeteer)](https://pptr.dev/)
 
     ```bash
     npm install
