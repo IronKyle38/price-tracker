@@ -6,17 +6,20 @@
     </p>
     <p>
         <a href="https://github.com/IronKyle38/price-tracker/commits/main"><img
-            src="https://img.shields.io/github/last-commit/IronKyle38/price-tracker" alt="GitHub last commit" /></a>
+            src="https://img.shields.io/github/last-commit/IronKyle38/price-tracker"
+            alt="GitHub last commit" /></a>
         <a href="https://github.com/IronKyle38/price-tracker/network/dependencies"><img
             src="https://img.shields.io/librariesio/github/IronKyle38/price-tracker"
-            alt="Libraries.io dependency status for GitHub repo" /></a>
+            alt="Dependency status for GitHub repo" /></a>
         <a href="https://github.com/IronKyle38/price-tracker/releases/latest"><img
             src="https://img.shields.io/github/v/release/IronKyle38/price-tracker"
             alt="GitHub release (latest by date)" /></a>
         <a href="https://github.com/IronKyle38/price-tracker"><img
             src="https://img.shields.io/github/languages/code-size/IronKyle38/price-tracker"
             alt="GitHub code size in bytes" /></a>
-        <a href="LICENSE"><img src="https://img.shields.io/github/license/IronKyle38/price-tracker" alt="License" /></a>
+        <a href="LICENSE"><img
+            src="https://img.shields.io/github/license/IronKyle38/price-tracker"
+            alt="License" /></a>
     </p>
 </div>
 
