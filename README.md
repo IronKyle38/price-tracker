@@ -12,7 +12,7 @@
             src="https://img.shields.io/librariesio/github/IronKyle38/price-tracker"
             alt="Dependency status for GitHub repo" /></a>
         <a href="https://github.com/IronKyle38/price-tracker/releases/latest"><img
-            src="https://img.shields.io/github/v/release/IronKyle38/price-tracker"
+            src="https://img.shields.io/github/v/release/IronKyle38/price-tracker?display_name=tag&include_prereleases"
             alt="GitHub release (latest by date)" /></a>
         <a href="https://github.com/IronKyle38/price-tracker"><img
             src="https://img.shields.io/github/languages/code-size/IronKyle38/price-tracker"
