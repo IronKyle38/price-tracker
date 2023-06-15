@@ -59,6 +59,12 @@ This is a simple price tracker that you can personalize to track the price of an
     npm install
     ```
 
+5. For **Linux** users, install [Chromium](https://www.chromium.org/getting-involved/download-chromium)
+
+    ```bash
+    sudo apt-get install chromium-browser
+    ```
+
 ## Usage
 
 1. Edit the `config.json` file in the `input` folder to add your favorite online store and the product you want to track.

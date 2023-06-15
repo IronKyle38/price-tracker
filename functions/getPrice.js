@@ -1,10 +1,22 @@
 // This function will get the price of a product from a website using Puppeteer
 
 // Import puppeteer
-const puppeteer = require('puppeteer');
+if (process.platform === 'linux') {
+    var puppeteer = require('puppeteer-core');
+} else {
+    var puppeteer = require('puppeteer');
+}
 
 async function getPrice(settings, n) {
-    const browser = await puppeteer.launch();
+
+    // Launch the browser
+    if (process.platform === 'linux') {
+        var browser = await puppeteer.launch({ executablePath: '/usr/bin/chromium-browser' });
+    } else {
+        var browser = await puppeteer.launch();
+    }
+
+    // Open a new page
     const page = await browser.newPage();
     await page.goto(settings.products[n].productURL);
 
