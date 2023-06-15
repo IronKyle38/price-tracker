@@ -26,8 +26,5 @@
   "homepage": "https://github.com/IronKyle38/price-tracker#readme",
   "dependencies": {
     "puppeteer": "20.7.1"
-  },
-  "puppeteer": {
-    "defaultProduct": "firefox"
   }
 }
